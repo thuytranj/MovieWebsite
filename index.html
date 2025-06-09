@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Movies</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-straight/css/uicons-bold-straight.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css'>
+    </head>
+    <body>
+        <div id="overlay" class="hidden"></div>
+        <main>
+            <div style="position: absolute; left: 10px;  z-index: 1; top:10px;">
+                <button id="home">Home</button>
+                <button id="popular">Popular</button>
+                <button id="topRated">Top Rated</button>
+                <button id="upcoming">Upcoming</button>
+            </div>
+
+            <form id="search-box" class ="search-box" >
+                <input type="text" placeholder="Search" style="background-color: transparent; border: none; color: white; outline: none;" id="search">
+                <i class="fi fi-rr-search"></i>
+            </form>
+
+            <div class="movie-top1">
+                <img src="Images/strangerThings.jpg" class="background">
+                <div class="movie-infor">
+                    <p id="nameMovie">STRANGER THINGS</p>
+                    <p id="descMovie" style="line-height: 1.5;">When a young boy vanishes, a small town uncovers a mystery involving
+                        secret experiments, terrifying supernatural forces and one strange little girl.</p>
+                </div>
+                <div style="display: flex; justify-content: flex-start; margin-bottom: 20px;position: absolute; z-index: 1;">
+                    <button id="playBtn"><i class="fi fi-sr-play"></i> Play</button>
+                    <button id="infoBtn">More info</button>
+                </div>
+            </div>
+
+            <p style="font-size: 35px; margin:10px; font-weight: bold; margin-left: 10px;margin-top: 80px;" id="popularSection">Popular</p>
+            <div class="Movies">
+                <button class="right-arrow"><i class="fi fi-br-angle-right"></i></button>
+                <button class="left-arrow"><i class="fi fi-br-angle-left"></i></button>
+                <div class="movie-list" id="trendingMovies">
+                   
+                </div>
+            </div>
+
+            <p style="font-size: 35px; margin:10px; font-weight: bold; margin-left: 10px;margin-top: 80px;" id="topRatedSection">Top Rated</p>
+            <div class="Movies">
+                <button class="right-arrow"><i class="fi fi-br-angle-right"></i></button>
+                <button class="left-arrow"><i class="fi fi-br-angle-left"></i></button>
+                <div class="movie-list" id="topRatedMovies">
+                   
+                </div>
+            </div>
+
+            <p style="font-size: 35px; margin:10px; font-weight: bold; margin-left: 10px;margin-top: 80px;" id="upcomingSection">Upcoming</p>
+            <div class="Movies">
+                <button class="right-arrow"><i class="fi fi-br-angle-right"></i></button>
+                <button class="left-arrow"><i class="fi fi-br-angle-left"></i></button>
+                <div class="movie-list" id="upcomingMovies">
+                    
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div style="font-size: 25px; display: flex; gap: 30px; margin-left: 110px;">
+                <i class="fi fi-brands-facebook"></i>
+                <i class="fi fi-brands-twitter-alt"></i>
+                <i class="fi fi-brands-youtube"></i>
+                <i class="fi fi-brands-instagram"></i>
+            </div>
+            <div style="display: flex; justify-content: space-around; font-weight: 400;">
+                <div>
+                    <p>Audio Description</p>
+                    <p>Investor Relations</p>
+                    <p>Legal Notices</p>
+                </div>
+                
+                <div>
+                    <p>Help Center</p>
+                    <p>Jobs</p>
+                    <p>Cookies Preferences</p>
+                </div>
+                
+                <div>
+                    <p>Git cards</p>
+                    <p>Terms of Use</p>
+                    <p>Corporate Information</p>
+                </div>
+                
+                <div>
+                    <p>Media Center</p>
+                    <p>Privacy</p>
+                    <p>Contact Us</p>
+                    </div>
+            </div>
+        </footer>
+        <script type="module" src="main.js"></script>
+    </body>
+</html>
